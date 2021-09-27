@@ -1,11 +1,17 @@
-# Vue 3 + Typescript + Vite
+# Collaborative art board
 
-This template should help get you started developing with Vue 3 and Typescript in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+This project allows users to upload an image to the blockchain and pick a spot where it will be shown.
 
-## Recommended IDE Setup
+After uploading, the art will be put on the artboard with all the previously uploaded images, making it a collaborative art board.
 
-- [VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=johnsoncodehk.volar)
+## Motivation
 
-## Type Support For `.vue` Imports in TS
+This project originated from me wanting to learn what smart contracts are all about and how they are developed. I took inspiration from that viral web page where everyone could buy a pixel and the community created very interesting art.
 
-Since TypeScript cannot handle type information for `.vue` imports, they are shimmed to be a generic Vue component type by default. In most cases this is fine if you don't really care about component prop types outside of templates. However, if you wish to get actual prop types in `.vue` imports (for example to get props validation when using manual `h(...)` calls), you can enable Volar's `.vue` type support plugin by running `Volar: Switch TS Plugin on/off` from VSCode command palette.
+## Tech
+
+For the front-end I chose to use [Vue3](https://vuejs.org/) with [Web3.js](https://web3js.readthedocs.io/en/v1.5.2/), build by [Vite](https://vitejs.dev/), supported by [Typescript](https://www.typescriptlang.org/) and [Eslint](https://eslint.org/) for quality assurance and developer experience.
+
+The smart contracts are written with [Solidity](https://docs.soliditylang.org/), the programming language that the Ethereum blockchain uses for smart contract development.
+
+For deploying and local development of smart contracts I used [Truffle](https://www.trufflesuite.com/truffle) and [Ganache](https://www.trufflesuite.com/ganache).
